@@ -51,7 +51,7 @@ struct Keychain {
 internal extension Data {
     
     var UTF8String: String? {
-        return NSString(data: self, encoding: String.Encoding.utf8.rawValue) as? String
+		return String(data: self, encoding: .utf8)
     }
 }
 
