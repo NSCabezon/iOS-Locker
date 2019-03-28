@@ -23,7 +23,7 @@ internal class Query {
     
     convenience init(service: String, account: String) {
         self.init()
-        payload[kSecReturnData as String] = kCFBooleanTrue as Bool
+        payload[kSecReturnData as String] = kCFBooleanTrue
         payload[kSecMatchLimit as String] = kSecMatchLimitOne as String
         payload[kSecAttrAccount as String] = account
         payload[kSecAttrService as String] = service
